@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>安纪元的个人主页 | Jiyuan An</title>
+<meta name="description" content="博士研究生的个人学术主页，研究方向：自然语言处理、大语言模型、计算语言学。" />
+<meta property="og:title" content="安纪元 | Jiyuan An - 个人学术主页" />
+<meta property="og:description" content="博士研究生的个人学术主页，研究方向：自然语言处理、大语言模型、计算语言学。" />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#0ea5e9" />
+<link rel="stylesheet" href="./styles/main.css" />
+<link rel="stylesheet" href="./styles/dark-mode.css" />
+<style>
+/* 语言切换按钮 */
+.lang-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.lang-switch a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+.lang-switch a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--brand-primary);
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(34, 211, 238, 0.05));
+}
+.lang-icon {
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .lang-switch a { padding: 8px 12px; }
+  .lang-text { display: none; }
+}
+</style>
+</head>
+<body>
+<!-- 语言切换按钮 -->
+<div class="lang-switch">
+  <a href="./index-en.html" title="Switch to English">
+    <span class="lang-icon">🇬🇧</span>
+    <span class="lang-text">English</span>
+  </a>
+</div>
+
+<div class="wrapper">
+<!-- 顶部名片 -->
+<header>
+<img class="avatar" src="./assets/images/profile.jpg" alt="安纪元" />
+<div class="header-content">
+<h1>安纪元 <span class="muted">/ Jiyuan An</span></h1>
+<p class="subtitle">硕士研究生 | Large Language Model · AI4Education · AI4Code</p>
+<div class="badges">
+<span class="badge">
+<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+Beijing, China
+</span>
+<a class="badge" href="mailto:jiyuanan.blcu@gmail.com">
+<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+Email
+</a>
+<a class="badge" href="https://github.com/JiyuanAn" target="_blank" rel="noreferrer">
+<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+<path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+</svg>
+GitHub
+</a>
+<a class="badge" href="https://www.semanticscholar.org/author/Jiyuan-An/2285341491" target="_blank" rel="noreferrer">
+<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+<path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"/>
+</svg>
+Semantic Scholar
+</a>
+<a class="badge" href="https://scholar.google.com/citations?user=q-O2LUIAAAAJ" target="_blank" rel="noreferrer">
+<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+<path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+</svg>
+Google Scholar
+</a>
+<a class="badge" href="https://aclanthology.org/people/jiyuan-an/" target="_blank" rel="noreferrer">
+<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+</svg>
+ACL Anthology
+</a>
+</div>
+</div>
+</header>
+
+<!-- 导航栏 -->
+<nav class="nav-bar">
+<a href="#about">关于我</a>
+<a href="#education">教育经历</a>
+<a href="#research">研究方向</a>
+<a href="#publications">论文发表</a>
+<a href="#projects">科研项目</a>
+<a href="#awards">荣誉奖项</a>
+<a href="#service">学术服务</a>
+</nav>
+
+<!-- 关于我 -->
+<section id="about" class="content-section">
+<h2 class="section-title">
+<span class="title-icon">👋</span>
+关于我
+</h2>
+<div class="about-content">
+<p>
+安纪元，硕士研究生，研究方向为<strong>大语言模型</strong>、<strong>智能辅助语言学习</strong>及<strong>智能辅助代码生成</strong>。
+北京语言大学语言监测与智能学习研究组（<a href="https://blcuicall.org/" target="_blank">BLCU-ICALL</a>）成员。
+师从杨尔弘教授与杨天麟副教授。
+</p>
+<p>
+我的研究兴趣主要集中在：大语言模型应用、模型可解释性、AI4Education、AI4Code等领域。
+目前专注于探索大语言模型在教育领域和代码编写领域的应用，以及如何提高模型的可控性和可解释性。
+</p>
+<div class="info-cards">
+<div class="info-card">
+<div class="info-label">当前身份</div>
+<div class="info-value">硕士研究生</div>
+</div>
+<div class="info-card">
+<div class="info-label">研究方向</div>
+<div class="info-value">LLM · AI4E · AI4C</div>
+</div>
+<div class="info-card">
+<div class="info-label">导师</div>
+<div class="info-value">杨尔弘 教授、杨天麟 副教授</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 教育经历 -->
+<section id="education" class="content-section">
+<h2 class="section-title">
+<span class="title-icon">🎓</span>
+教育经历
+</h2>
+<div class="timeline">
+<!-- <div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<div class="timeline-date">2026.09 — 至今</div>
+<h3>博士研究生</h3>
+<div class="institution">北京语言大学 · 信息科学学院</div>
+<div class="major">语言智能与技术专业</div>
+<div class="advisor">导师：杨尔弘 教授、杨天麟 副教授</div>
+<div class="description">研究方向：自然语言处理、大语言模型、智能辅助语言学习</div>
+</div>
+</div> -->
+<div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<div class="timeline-date">2023.02 — 2026.07</div>
+<h3>硕士研究生</h3>
+<div class="institution">北京语言大学 · 信息科学学院</div>
+<div class="major">语言智能与技术专业</div>
+<div class="advisor">导师：杨尔弘 教授、杨天麟 副教授</div>
+<div class="achievement">GPA: 3.95/4.0 | 国家奖学金获得者</div>
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-marker"></div>
+<div class="timeline-content">
+<div class="timeline-date">2019.09 — 2023.07</div>
+<h3>本科</h3>
+<div class="institution">山西大学 · 计算机与信息技术学院</div>
+<div class="major">数据科学与大数据技术专业</div>
+<div class="advisor">导师：王素格 教授</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 研究方向 -->
+<section id="research" class="content-section">
+<h2 class="section-title">
+<span class="title-icon">🔬</span>
+研究方向
+</h2>
+<div class="research-grid">
+<div class="research-card">
+<div class="research-icon">🤖</div>
+<h3>大语言模型</h3>
+<p>大语言模型应用、模型微调、提示工程、工具使用与智能体</p>
+</div>
+<div class="research-card">
+<div class="research-icon">🔍</div>
+<h3>模型可解释性</h3>
+<p>探索大语言模型的内部机制、决策过程与可控生成</p>
+</div>
+<div class="research-card">
+<div class="research-icon">📚</div>
+<h3>智能辅助语言学习</h3>
+<p>计算机辅助语言学习、自动反馈生成、写作评价</p>
+</div>
+<div class="research-card">
+<div class="research-icon">💻</div>
+<h3>代码生成与理解</h3>
+<p>大语言模型辅助代码生成、程序理解与自动化</p>
+</div>
+</div>
+</section>
+
+<!-- 论文发表 -->
+<section id="publications" class="content-section">
+<h2 class="section-title">
+<span class="title-icon">📝</span>
+论文发表
+</h2>
+<div class="publications">
+<h3 class="year-divider">2025</h3>
+<div class="publication-item">
+<div class="pub-title">
+<strong>Jiyuan, A.</strong>, Xiang, F., Bo, L., Xuquan, Z., Cunliang, K., Shuliang, S., Shuo, W., Zhenghao, Z., Liner, Y., Hanghang, F., & Erhong, Y. (2025). 
+BLCU-ICALL at BEA 2025 Shared Task: Multi-Strategy Evaluation of AI Tutors.
+</div>
+<div class="pub-venue"><em>Proceedings of the 20th Workshop on Innovative Use of NLP for Building Educational Applications (BEA 2025).</em></div>
+<div class="pub-links">
+<a href="https://aclanthology.org/2025.bea-1.84.pdf" class="pub-link" target="_blank">
+<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+<polyline points="14,2 14,8 20,8"></polyline>
+</svg>
+PDF
+</a>
+<span class="pub-award">🏆 第一名</span>
+</div>
+</div>
+
+<div class="publication-item">
+<div class="pub-title">
+<strong>安纪元</strong>, 朱琳 & 杨尔弘.(2025). 面向语言学习者的跨语言反馈评语生成方法.
+</div>
+<div class="pub-venue"><em>中文信息学报</em>, 39(07), 148-161.</div>
+<div class="pub-links">
+<a href="./Papers/JoCIP_202507.pdf" class="pub-link" target="_blank">
+<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+<polyline points="14,2 14,8 20,8"></polyline>
+</svg>
+PDF
+</a>
+</div>
+</div>
+
+<div class="publication-item">
+<div class="pub-title">
+Mengyan W., <strong>Jiyuan A.</strong>, Liner Y., & Erhong Y. (2025). 
+跨语言方位词对"左-右"的语义衍化与语义关联模式探究.
+</div>
+<div class="pub-venue"><em>Proceedings of the 24rd Chinese National Conference on Computational Linguistics (CCL 2025)</em></div>
+<div class="pub-links">
+<a href="./Papers/CCL2025_171.pdf" class="pub-link" target="_blank">
+<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+<polyline points="14,2 14,8 20,8"></polyline>
+</svg>
+PDF
+</a>
+</div>
+</div>
+
+<h3 class="year-divider">2024</h3>
+<div class="publication-item">
+<div class="pub-title">
+<strong>Jiyuan, A.</strong>, Lin, Z., & Erhong, Y. (2024). 
+面向语言学习者的跨语言反馈评语生成方法 (Cross-Lingual Feedback Comment Generation for Language Learners).
+</div>
+<div class="pub-venue"><em>Proceedings of the 23rd Chinese National Conference on Computational Linguistics (CCL 2024)</em>, pp. 134-149.</div>
+<div class="pub-links">
+<a href="https://aclanthology.org/2024.ccl-1.10.pdf" class="pub-link" target="_blank">
+<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+<polyline points="14,2 14,8 20,8"></polyline>
+</svg>
+PDF
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 科研项目 -->
+<section id="projects" class="content-section">
+<h2 class="section-title">
+<span class="title-icon">🚀</span>
+科研项目
+</h2>
+<div class="projects-grid">
+<div class="project-card">
+<div class="project-header">
+<h3>智能写作辅助系统</h3>
+<span class="project-status active">进行中</span>
+</div>
+<p class="project-desc">基于大语言模型的智能写作辅助系统，提供实时反馈和改进建议。</p>
+<div class="project-tech">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">PyTorch</span>
+<span class="tech-tag">Transformers</span>
+<span class="tech-tag">LLM</span>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-header">
+<h3>跨语言反馈生成</h3>
+<span class="project-status completed">已完成</span>
+</div>
+<p class="project-desc">面向语言学习者的跨语言自动反馈生成系统，支持多语言环境。</p>
+<div class="project-tech">
+<span class="tech-tag">NLP</span>
+<span class="tech-tag">Machine Translation</span>
+<span class="tech-tag">BERT</span>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-header">
+<h3>AI导师评估框架</h3>
+<span class="project-status completed">已完成</span>
+</div>
+<p class="project-desc">多策略AI导师评估框架，获得BEA 2025 Shared Task第一名。</p>
+<div class="project-tech">
+<span class="tech-tag">LLM</span>
+<span class="tech-tag">Evaluation</span>
+<span class="tech-tag">Educational AI</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 荣誉奖项 -->
+<section id="awards" class="content-section">
+<h2 class="section-title">
+<span class="title-icon">🏆</span>
+荣誉奖项
+</h2>
+<div class="awards-list">
+<div class="award-item">
+<div class="award-image">
+<img src="./assets/images/BEA_2025.png" alt="BEA 2025 Award" />
+</div>
+<div class="award-content">
+<h3>BEA 2025 Shared Task - Track 2 第一名</h3>
+<p class="award-org">20th Workshop on Innovative Use of NLP for Building Educational Applications (ACL 2025)</p>
+<p class="award-desc">BLCU-ICALL at BEA 2025 Shared Task: Multi-Strategy Evaluation of AI Tutors</p>
+<p class="award-date">2025年8月</p>
+</div>
+</div>
+
+<div class="award-item">
+<div class="award-image">
+<img src="./assets/images/IaCS.png" alt="国家奖学金" />
+</div>
+<div class="award-content">
+<h3>研究生国家奖学金</h3>
+<p class="award-org">中华人民共和国教育部</p>
+<p class="award-desc">表彰在学业成绩、科研创新等方面表现突出的研究生</p>
+<p class="award-date">2025年11月</p>
+</div>
+</div>
+
+<div class="award-item">
+<div class="award-image">
+<img src="./assets/images/IaCS.png" alt="学业奖学金" />
+</div>
+<div class="award-content">
+<h3>北京语言大学研究生一等学业奖学金</h3>
+<p class="award-org">北京语言大学</p>
+<p class="award-desc">连续三年获得一等学业奖学金</p>
+<p class="award-date">2023年11月、2024年11月、2025年11月</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 学术服务 -->
+<section id="service" class="content-section">
+<h2 class="section-title">
+<span class="title-icon">🤝</span>
+学术服务
+</h2>
+<div class="service-content">
+<div class="service-category">
+<h3>审稿人 (Reviewer)</h3>
+<ul>
+<li>NLPCC 2025, 2025.06</li>
+</ul>
+</div>
+<div class="service-category">
+<h3>组织者 (Organizer)</h3>
+<ul>
+<li>...</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+<div class="footer-content">
+<p>&copy; 2025 安纪元 (Jiyuan An). 保留所有权利。</p>
+<p class="footer-note">最后更新：2025年1月 | Built with ❤️</p>
+</div>
+</footer>
+</div>
+
+<script src="./scripts/main.js"></script>
+</body>
+</html>
